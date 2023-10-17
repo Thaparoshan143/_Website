@@ -1,14 +1,22 @@
 import React from 'react';
 import "./index.css";
 import Navbar from './components/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import NotFound from './NotFound';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
     <Navbar />
-    <div className="App flex flex-row items-center justify-evenly h-[100vh] bg-gray-400">
-    <h1 className="font-serif text-4xl uppercase font-bold text-purple-800">Hello to my website</h1>
-    </div>
+    <Routes>
+      <Route path='/*' element={<NotFound />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/contact' element={<Contact />} />
+    </Routes>
+    <Footer />
     </>
   );
 }

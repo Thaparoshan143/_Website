@@ -10,7 +10,7 @@ interface NavItem
 const Navbar : React.FC = () =>
 {
     return (
-        <nav className="w-[100vw] flex flex-row justify-evenly items-center px-16 ">
+        <nav className="w-[100vw] bg-[#ffffffaa] flex flex-row justify-evenly items-center fixed z-10 pr-[40vw] backdrop-blur-xl">
             {
                 _NavItems.map(({title, url} : NavItem)=>{
                     return <Item title={title} url={url}/>
@@ -23,7 +23,7 @@ const Navbar : React.FC = () =>
 const Item : React.FC<NavItem> = ({title, url}) =>
 {
     return (
-        <a className="font-bold text-2xl mx-[1rem] text-violet-500 p-[1rem] hover:underline underline-offset-8 transition delay-250" href={url}>
+        <a className="font-medium text-xl mx-[1rem] text-theme p-[1rem] hover:underline underline-offset-8 transition delay-500 decoration-4" href={url}>
             {title}
         </a>
     )
