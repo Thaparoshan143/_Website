@@ -10,7 +10,7 @@ interface NavItem
 const Navbar : React.FC = () =>
 {
     return (
-        <nav className="w-[100vw] bg-[#ffffffaa] flex flex-row justify-evenly items-center fixed z-10 pr-[40vw] backdrop-blur-xl">
+        <nav className="w-[100vw] bg-[#ffffffaa] flex flex-row justify-evenly fixed z-10 pr-[40vw] backdrop-blur-xl">
             {
                 _NavItems.map(({title, url} : NavItem)=>{
                     return <Item title={title} url={url}/>

@@ -2,6 +2,7 @@
 
 export const _Name = "Roshan Thapa";
 export const _Description = "An eager and energetic Computer Engineering Student";
+export const _AboutMe = "I am Computer Engineering Student at Thapathali Campus. To describe in short, I am into Programming (C, C++, C#, Python), Web Developemt (HTML, CSS, JS, Reactjs), 3D Modeling (Blender). As a hobby, I also get involved in Game Development (Unity | C#). I am always looking forward to solve new challenges, learning and exploring new things in the technological world solving the problems using the tools known";
 export const _CopyrightMessage = "All Copyright reserved - @2023"
 
 export const _NavItems = [
@@ -44,16 +45,20 @@ export const _FooterItems = [
         item : "Socials",
         subitems : [
                 {
-                title : "Facebook",
-                url : "#"
-                },
-                {
-                    title : "Youtube",
-                    url : "#"
+                    title : "Facebook",
+                    url : "https://www.facebook.com/Me-in-Unity-102966158048488/"
                 },
                 {
                     title : "Github",
-                    url : "#"
+                    url : "https://github.com/Thaparoshan143"
+                },
+                {
+                    title : "Youtube",
+                    url : "https://www.youtube.com/channel/UCgcp2_YxezJh71hxvcb_CWw"
+                },
+                {
+                    title : "Linkedin",
+                    url : "https://www.linkedin.com/in/roshan-thapa-294498251/"
                 }]
     },
     {    
