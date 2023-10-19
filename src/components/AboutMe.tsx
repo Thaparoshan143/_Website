@@ -3,7 +3,7 @@ import { _AboutMe } from '../Data'
 
 const AboutMe : React.FC = () => {
     const me = require("../images/me.png");
-    const bgAboutMe= require("../images/aboutme.png");
+    // const bgAboutMe= require("../images/aboutme.png");
   return (
     <>
     <div className="h-[100vh] flex flex-row justify-evenly items-center">
