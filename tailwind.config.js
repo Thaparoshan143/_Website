@@ -8,6 +8,7 @@ module.exports = {
       colors :{
         'theme' : 'rgba(124, 58, 237, 1)',
         'theme-alt' : 'rgba(124, 58, 237, 0.8)',
+        'theme-alth' : 'rgba(124, 58, 237, 0.2)',
         'theme-hovd' : 'rgb(73, 33, 140)',
         'theme-hovl' : 'rgb(146, 96, 231)',
       },

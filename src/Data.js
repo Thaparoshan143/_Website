@@ -78,18 +78,22 @@ export const _MajorSkills = [
         subItem : [
             {
                 item : "C",
+                progress : 80,
                 level : "Competent"
             },
             {
                 item : "C++",
+                progress : 80,
                 level : "Competent"
             },
             {
                 item : "Python",
+                progress : 40,
                 level : "Advanced Beginner"
             },
             {
                 item : "C#",
+                progress : 30,
                 level : "Advanced Beginner"
             }
         ]
@@ -99,18 +103,22 @@ export const _MajorSkills = [
         subItem : [
             {
                 item : "HTML",
+                progress : 80,
                 level : "Competent"
             },
             {
                 item : "CSS",
+                progress : 80,
                 level : "Competent"
             },
             {
                 item : "JS",
+                progress : 70,
                 level : "Advanced Beginner"
             },
             {
                 item : "Reactjs",
+                progress : 70,
                 level : "Advanced Beginner"
             }
         ]
@@ -120,10 +128,12 @@ export const _MajorSkills = [
         subItem : [
             {
                 item : "Blender",
+                progress : 50,
                 level : "Advanced Beginner"
             },
             {
                 item : "Autodesk",
+                progress : 25,
                 level : "Beginner"
             }
         ]
@@ -133,6 +143,7 @@ export const _MajorSkills = [
         subItem : [
             {
                 item : "Unity",
+                progress : 50,
                 level : "Advanced Beginner"
             }
         ]
@@ -142,6 +153,7 @@ export const _MajorSkills = [
         subItem : [
             {
                 item : "Photoshop",
+                progress : 25,
                 level : "Beginner"
             }
         ]
