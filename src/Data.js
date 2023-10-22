@@ -252,46 +252,46 @@ export const _ProjectsInfo = [
 export const _Certificates = [
     {
         title : "C Basic",
-        url : "../images/Certificates/C Basic.jpg"
+        url : "../images/C Basic.jpg"
     },
     {
         title : "C Master",
-        url : "../images/Certificates/C Master.jpg"
+        url : "../images/C Master.jpg"
     },
     {
         title : "C++ Basic",
-        url : "../images/Certificates/C++ Basic.jpg"
+        url : "../images/C++ Basic.jpg"
     },
     {
         title : "C++ Master",
-        url : "../images/Certificates/C++ Master.jpg"
+        url : "../images/C++ Master.jpg"
     },
     {
         title : "C++ OOP",
-        url : "../images/Certificates/C++ OOP.jpg"
+        url : "../images/C++ OOP.jpg"
     },
     {
         title : "Python Basic",
-        url : "../images/Certificates/Python Basics.jpg"
+        url : "../images/Python Basics.jpg"
     },
     {
         title : "Python Master",
-        url : "../images/Certificates/Python Master.jpg"
+        url : "../images/Python Master.jpg"
     },
     {
         title : "Python Beyond Basic",
-        url : "../images/Certificates/Python Beyond Basics.jpg"
+        url : "../images/Python Beyond Basics.jpg"
     },
     {
         title : "JSQSXJ",
-        url : "../images/Certificates/Joint Quiz SXJ.jpg"
+        url : "../images/Joint Quiz SXJ.jpg"
     },
     {
         title : "USQSXJ",
-        url : "../images/Certificates/Unity Quiz SXJ.jpg"
+        url : "../images/Unity Quiz SXJ.jpg"
     },
     {
         title : "SFSXJ",
-        url : "../images/Certificates/Science Fair SXJ.jpg"
+        url : "../images/Science Fair SXJ.jpg"
     }
 ];
