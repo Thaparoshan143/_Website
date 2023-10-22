@@ -15,8 +15,8 @@ export const _NavItems = [
         url : "/portfolio"
     },
     {
-        title : "Explore",
-        url : "/explore"
+        title : "Certification",
+        url : "/certification"
     },
     {
         title : "Contact",
@@ -245,5 +245,53 @@ export const _ProjectsInfo = [
                 url : "https://www.youtube.com/@roshanthapa1297/videos"
             }
         ]
+    }
+];
+
+
+export const _Certificates = [
+    {
+        title : "C Basic",
+        url : "../images/Certificates/C Basic.jpg"
+    },
+    {
+        title : "C Master",
+        url : "../images/Certificates/C Master.jpg"
+    },
+    {
+        title : "C++ Basic",
+        url : "../images/Certificates/C++ Basic.jpg"
+    },
+    {
+        title : "C++ Master",
+        url : "../images/Certificates/C++ Master.jpg"
+    },
+    {
+        title : "C++ OOP",
+        url : "../images/Certificates/C++ OOP.jpg"
+    },
+    {
+        title : "Python Basic",
+        url : "../images/Certificates/Python Basics.jpg"
+    },
+    {
+        title : "Python Master",
+        url : "../images/Certificates/Python Master.jpg"
+    },
+    {
+        title : "Python Beyond Basic",
+        url : "../images/Certificates/Python Beyond Basics.jpg"
+    },
+    {
+        title : "JSQSXJ",
+        url : "../images/Certificates/Joint Quiz SXJ.jpg"
+    },
+    {
+        title : "USQSXJ",
+        url : "../images/Certificates/Unity Quiz SXJ.jpg"
+    },
+    {
+        title : "SFSXJ",
+        url : "../images/Certificates/Science Fair SXJ.jpg"
     }
 ];

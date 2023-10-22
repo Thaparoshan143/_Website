@@ -8,8 +8,9 @@ import NotFound from './NotFound';
 import Footer from './components/Footer';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
+import Certification from './components/Certification';
 
-function App() {
+const App : React.FC = ()=> {
   return (
     <>
     <Navbar />
@@ -17,6 +18,7 @@ function App() {
       <Route path='/*' element={<NotFound />} />
       <Route path='/home' element={<Home />} />
       <Route path='/portfolio' element={<Portfolio />} />
+      <Route path='/certification' element={<Certification />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/aboutme' element={<AboutMe />} />
     </Routes>
