@@ -21,12 +21,8 @@ const Certification : React.FC = () =>
     const urlsProject = [urlJSQSXJ, urlUSQSXJ, urlSFSXJ];
 
     return (
-        <div className="min-h-[200vh] flex flex-row flex-wrap justify-center items-center pt-[5rem]">
-            <img className="absolute top-0 left-0 -z-10 w-[100vw] h-[200vh] min-h-full min-w-full opacity-60" src={bgCertification} alt={"skills image"} />
-            {/* {_Certificates.map(({title, url})=>
-            {
-                return <img className="h-[30rem] w-[20rem] m-[1rem] border-theme border-2 hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300" src={""} alt={title} />
-            })} */}
+        <div className="min-h-[200vh] flex flex-row flex-wrap justify-around items-center pt-[5rem]">
+            <div className="absolute top-0 left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgCertification})`}} />
             {urlsProgramming.map((url)=>
             {
                 return <img className="h-[30rem] w-[20rem] m-[1rem] hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300 opacity-90 hover:opacity-100" src={url} />

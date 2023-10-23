@@ -16,7 +16,7 @@ interface IFooterSubItem
 const Footer: React.FC = () => {
   return (
     <footer className="min-h-[20rem] bg-theme-alt flex flex-col justify-evenly w-[100%] border-t-theme-hovd border-t-8 rounded-xl">
-        <div className="flex flex-row w-[100%] justify-evenly">
+        <div className="flex lg:flex-row flex-col w-[100%] text-center justify-evenly items-center">
             {
                 _FooterItems.map(({item, subitems})=>
                 {
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                 })
             }
         </div>
-        <span className="text-white font-md text-center">{_CopyrightMessage}</span>
+        <span className="text-white font-md text-center my-[1rem]">{_CopyrightMessage}</span>
     </footer>
   )
 }
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
 const FooterItem : React.FC<IFooterItem> = ({item, subitems} : IFooterItem) => {
     return (
         <ul className="flex flex-col">
-            <span className="text-2xl text-white font-bold underline underline-offset-8 decoration-2 my-[1rem]">{item}</span>
+            <span className="text-2xl text-white font-bold underline underline-offset-8 decoration-2 my-[1.2rem]">{item}</span>
             {subitems.map(({title, url})=>{
                 return <FooterSubItem title={title} url={url} />
             })}

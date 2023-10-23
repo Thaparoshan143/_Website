@@ -37,15 +37,15 @@ const Portfolio : React.FC = () => {
         {/* <img className="absolute top-0 left-0 -z-10 w-[100vw] h-[100vh] min-h-full min-w-full" src={bgPortfolio} alt={"home image"} /> */}
         <div id="skills" className="w-[100%] min-h-[200vh] flex flex-row flex-wrap justify-center items-center pb-[15rem]">
             {/* <span className="text-6xl text-theme text-center block my-[2rem] font-bold">Hard Skills</span> */}
-            <img className="absolute top-0 left-0 -z-10 w-[100vw] h-[200vh] min-h-full min-w-full opacity-60" src={bgPortfolioSkills} alt={"skills image"} />
+            <div className="absolute top-0 left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgPortfolioSkills})`}} />
             {_MajorSkills.map(({field, subItem})=>
             {
                 return <SkillCard field={field} subItem={subItem} />
             })}
         </div>
-        <div id="projects" className="w-[100%] h-[200vh] flex flex-row flex-wrap justify-center items-center">
+        <div id="projects" className="w-[100%] min-h-[200vh] flex flex-row flex-wrap justify-center items-center">
             {/* <span className="text-6xl text-theme text-center block my-[2rem] font-bold">Projects</span> */}
-            <img className="absolute top-[200vh] left-0 -z-10 w-[100vw] h-[220vh] min-h-full min-w-full opacity-60" src={bgPortfolioProjects} alt={"projects image"} />
+            <div className="absolute top-[200vh] left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgPortfolioProjects})`}} />
             {_ProjectsInfo.map(({type, subItem})=>
             {
                 return <ProjectCard type={type} subItem={subItem} />
@@ -58,7 +58,7 @@ const Portfolio : React.FC = () => {
 const SkillCard: React.FC<ISkills> = ({field, subItem} : ISkills) =>
 {
     return (
-        <div className="p-[1rem] m-[2rem] w-[35%] rounded-xl bg-[#ffffff11] backdrop-blur-xl transition delay-250  ease-in-out hover:scale-[105%] hover:shadow-md hover:shadow-theme [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.2)] border-[1px] border-[rgba(255,255,255,0.1)] hover:bg-[#ffffff66]">
+        <div className="p-[1rem] m-[2rem] lg:w-[35%] w-[90%] rounded-xl bg-[#ffffff11] backdrop-blur-xl transition delay-250  ease-in-out hover:scale-[105%] hover:shadow-md hover:shadow-theme [box-shadow:0_4px_30px_rgba(0,_0,_0,_0.2)] border-[1px] border-[rgba(255,255,255,0.1)] hover:bg-[#ffffff66]">
             <span className="text-2xl text-theme-hovd text-center block font-extrabold mb-[2rem]">{field}</span>
             <div className="w-[100%] flex flex-col justify-evenly items-center min-h-[8rem]">
                 {subItem.map(({item, progress, level})=>
@@ -89,7 +89,7 @@ const SkillSubItem : React.FC<ISkillsItem> = ({item, progress, level} : ISkillsI
 const ProjectCard : React.FC<IProjects> = ({type, subItem} : IProjects) =>
 {
     return (
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-col lg:flex-row justify-center items-center">
             {subItem.map(({item, description, tools, url})=>
             {
                 return <ProjectSubItem item={item} description={description} tools={tools} url={url} />
