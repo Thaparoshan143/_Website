@@ -43,7 +43,7 @@ const Navbar : React.FC = () =>
     },[scrollTop]);
 
     return (
-        <nav style={navHidden?{display:'none'}:{display:'flex'}} className="w-[100vw] bg-[#ffffffaa] flex flex-col justify-evenly fixed z-10 lg:pr-[40vw] lg:flex-row backdrop-blur-xl items-center">
+        <nav style={navHidden?{display:'none'}:{display:'flex'}} className="w-[100vw] bg-[#ffffffaa] flex flex-col justify-evenly fixed z-10 lg:pr-[40vw] pr-[0] lg:flex-row backdrop-blur-xl items-center text-center">
             {
                 _NavItems.map(({title, url} : NavItem)=>{
                     return <Item title={title} url={url}/>
@@ -56,7 +56,7 @@ const Navbar : React.FC = () =>
 const Item : React.FC<NavItem> = ({title, url}) =>
 {
     return (
-        <a className="font-medium text-xl mx-[1rem] text-theme p-[1rem] hover:underline underline-offset-8 transition delay-500 decoration-4" href={url}>
+        <a className="font-medium text-xl mx-[1rem] text-theme lg:p-[1rem] p-[0.6rem] hover:underline underline-offset-8 transition delay-500 decoration-4 lg:w-[auto] w-[100%]" href={url}>
             {title}
         </a>
     )

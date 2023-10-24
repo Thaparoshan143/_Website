@@ -22,14 +22,14 @@ const Certification : React.FC = () =>
 
     return (
         <div className="min-h-[200vh] flex flex-row flex-wrap justify-around items-center pt-[5rem]">
-            <div className="absolute top-0 left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgCertification})`}} />
+            <div className="absolute top-0 left-0 -z-10 h-[200vh] w-[100vw] opacity-50" style={{background:`url(${bgCertification})`,backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'center'}} />
             {urlsProgramming.map((url)=>
             {
                 return <img className="h-[30rem] w-[20rem] m-[1rem] hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300 opacity-90 hover:opacity-100" src={url} />
             })}
             {urlsProject.map((url)=>
             {
-                return <img className="h-[20rem] w-[30rem] m-[1rem] hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300 opacity-90 hover:opacity-100" src={url} />
+                return <img className="lg:h-[20rem] h-[15rem] w-[30rem] m-[1rem] hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300 opacity-90 hover:opacity-100" src={url} />
             })}
             {/* <img className="h-[30rem] w-[20rem] m-[1rem] border-theme border-2 hover:shadow-theme-hovd hover:shadow-xl hover:scale-[102%] transition delay-300" src={urlstemp} alt={"this"} /> */}
         </div>

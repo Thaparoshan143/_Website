@@ -33,11 +33,11 @@ const Portfolio : React.FC = () => {
     const bgPortfolioSkills = require("../images/portfolioskills.png");
     const bgPortfolioProjects = require("../images/portfolioprojects.png");
   return (
-    <div className="min-h-[100vh] pt-[5rem] w-[100%] flex flex-col justify-center items-center">
+    <div className="min-h-[100vh] lg:pt-[5rem] pt-[12rem] w-[100%] flex flex-col justify-center items-center">
         {/* <img className="absolute top-0 left-0 -z-10 w-[100vw] h-[100vh] min-h-full min-w-full" src={bgPortfolio} alt={"home image"} /> */}
         <div id="skills" className="w-[100%] min-h-[200vh] flex flex-row flex-wrap justify-center items-center pb-[15rem]">
             {/* <span className="text-6xl text-theme text-center block my-[2rem] font-bold">Hard Skills</span> */}
-            <div className="absolute top-0 left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgPortfolioSkills})`}} />
+            <div className="absolute top-0 left-0 -z-10 h-[200vh] w-[100vw] opacity-50" style={{background:`url(${bgPortfolioSkills})`,backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'center'}} />
             {_MajorSkills.map(({field, subItem})=>
             {
                 return <SkillCard field={field} subItem={subItem} />
@@ -45,7 +45,7 @@ const Portfolio : React.FC = () => {
         </div>
         <div id="projects" className="w-[100%] min-h-[200vh] flex flex-row flex-wrap justify-center items-center">
             {/* <span className="text-6xl text-theme text-center block my-[2rem] font-bold">Projects</span> */}
-            <div className="absolute top-[200vh] left-0 -z-10 h-[100vh] w-[100vw] bg-no-repeat" style={{background:`url(${bgPortfolioProjects})`}} />
+            <div className="absolute top-[200vh] left-0 -z-10 h-[200vh] w-[100vw] opacity-50" style={{background:`url(${bgPortfolioProjects})`,backgroundRepeat:'no-repeat', backgroundSize:'cover', backgroundPosition:'center'}} />
             {_ProjectsInfo.map(({type, subItem})=>
             {
                 return <ProjectCard type={type} subItem={subItem} />
@@ -77,8 +77,8 @@ const SkillSubItem : React.FC<ISkillsItem> = ({item, progress, level} : ISkillsI
         {console.log(item+" "+level)}
         <div className="flex flex-row w-[100%] justify-between items-center">
             <span className="text-theme m-[0.5rem] text-md font-bold">{item}</span>
-            <div className="w-[70%] bg-transparent border-[0.1rem] border-theme rounded-xl overflow-hidden">
-                <div className={`bg-theme h-[0.4rem] rounded-2xl w-[` + progress + "%]"}></div>
+            <div className="lg:w-[70%] w-[60%] block bg-transparent border-[0.1rem] border-theme rounded-xl overflow-hidden">
+                <div className={`bg-theme h-[0.4rem] rounded-2xl w-[${(progress)}%]`}></div>
             </div>
             {/* <span className="text-black m-[0.5rem] text-sm">{level}</span> */}
         </div>
@@ -107,7 +107,7 @@ const ProjectSubItem : React.FC<IProjectItem> = ({item, description, tools, url 
             <span className="text-theme-hovd px-[0.5rem] font-extrabold text-xl">{item}</span>
             <div className="flex flex-row my-[1rem]">
             {tools.map((item)=>{
-                return <li className="p-[0.5rem] list-none bg-theme-alt mx-[0.5rem] rounded-md min-w-[4rem] text-center text-white">{item}</li>
+                return <li className="p-[0.5rem] list-none bg-theme-alt mx-[0.5rem] rounded-md lg:min-w-[4rem] text-center text-white">{item}</li>
             })}
             </div>
             <span className="text-black px-[0.5rem] mx-[2rem] text-justify text-sm font-light">{description}</span>

@@ -16,7 +16,7 @@ interface IFooterSubItem
 const Footer: React.FC = () => {
   return (
     <footer className="min-h-[20rem] bg-theme-alt flex flex-col justify-evenly w-[100%] border-t-theme-hovd border-t-8 rounded-xl">
-        <div className="flex lg:flex-row flex-col w-[100%] text-center justify-evenly items-center">
+        <div className="my-[1rem] lg:my-[0] flex lg:flex-row flex-col w-[100%] text-center justify-evenly items-center">
             {
                 _FooterItems.map(({item, subitems})=>
                 {
