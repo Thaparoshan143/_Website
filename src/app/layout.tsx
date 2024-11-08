@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" style={{scrollBehavior:'smooth'}}>
       <body className="min-h-[100vh] w-full flex flex-col justify-evenly items-center relative">
         <Navbar />
         <Image alt="bg" src={bg} className="-z-50 opacity-50 brightness-[30%] absolute top-0 left-0 w-full h-full overflow-hidden" />
