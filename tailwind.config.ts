@@ -9,10 +9,28 @@ export default {
   theme: {
     extend: {
       colors: {
-        theme : "#4C1F7A",
-        theme_o : "#FF8000",
-        theme_b : "#219B9D",
-        theme_w : "#EEEEEE",
+        "theme" : "#4C1F7A",
+        "theme-alt" : "#5D2F8B",
+        "theme-o" : "#FF8000",
+        "theme-b" : "#219B9D",
+        "theme-w" : "#EEEEEE",
+        "theme-w-alt" : "#dcdcdc",
+      },
+      fontSize: {
+        "extra-large" : "6rem",
+        "r-extra-large" : "6em",
+        "heading" : "2rem",
+        "r-heading" : "2em",
+        "title" : "1.5rem",
+        "r-title" : "1.5em",
+        "stitle" : "1.25rem",
+        "r-stitle" : "1.25em",
+        "note" : "1rem",
+        "r-note" : "1em",
+      },
+      fontFamily: {
+        "main" : '"Roboto", sans-serif;',
+        "main-alt" : '"Barlow Condensed", serif;',
       },
     },
   },
