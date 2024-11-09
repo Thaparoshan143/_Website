@@ -8,8 +8,8 @@ const ProjectCard = ({title, description, tools, url} : any) => {
             <p className="m-2">{description}</p>
             <div className="p-2 flex flex-row justify-evenly items-center">
                 {
-                    tools.map((item : any)=> {
-                        return <li className="mx-2 p-2 min-w-[3rem] bg-theme-b hover:bg-theme-b-alt text-theme-w rounded-md text-little list-none transition-all duration-200 cursor-pointer">{item}</li>
+                    tools.map((item : string)=> {
+                        return <li key={item} className="mx-2 p-2 min-w-[3rem] bg-theme-b hover:bg-theme-b-alt text-theme-w rounded-md text-little list-none transition-all duration-200 cursor-pointer">{item}</li>
                     })
                 }
             </div>
