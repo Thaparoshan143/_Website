@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="w-full p-2 py-3 flex flex-row justify-evenly items-center px-[20%] bg-theme-b backdrop-filter backdrop-blur-sm fixed top-0 left-0">
         {
-            _navItems.map(({title, url}) => {
+            _navItems.map(({title, url} : any) => {
                 return <NavItem key={title} title={title} url={url} />
             })
         }

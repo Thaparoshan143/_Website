@@ -20,7 +20,7 @@ const Contact = () => {
   )
 }
 
-const TextInput = ({label, placeholder, height} : any) => {
+const TextInput = ({label, placeholder} : any) => {
     return (
         <div className="m-2 flex flex-row justify-between items-center w-full text-theme-w">
             <label className="text-theme-b font-bold">{label}</label>

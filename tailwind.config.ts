@@ -13,6 +13,7 @@ export default {
         "theme-alt" : "#5D2F8B",
         "theme-o" : "#FF8000",
         "theme-b" : "#219B9D",
+        "theme-b-alt" : "#10878C",
         "theme-w" : "#EEEEEE",
         "theme-w-alt" : "#dcdcdc",
       },
@@ -27,6 +28,8 @@ export default {
         "r-stitle" : "1.25em",
         "note" : "1rem",
         "r-note" : "1em",
+        "little" : "0.8rem",
+        "r-little" : "0.8em",
       },
       fontFamily: {
         "main" : '"Roboto", sans-serif;',

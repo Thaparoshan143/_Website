@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="flex flex-col justify-evenly items-center w-full">
             {
                 _projectList.map(({type, subItem} : any) => {
-                    return <ProjectItem type={type} items={subItem} />
+                    return <ProjectItem key={type} type={type} items={subItem} />
                 })
             }
         </div>
@@ -21,10 +21,10 @@ const ProjectItem = ({type, items} : any) => {
     return (
         <div className="w-full text-center m-4">
             <h1 className="text-heading uppercase my-4">{type}</h1>
-            <div className="grid grid-cols-3 auto-cols-min justify-center gap-6 justify-items-center">
+            <div className="grid grid-cols-3 gap-6 justify-items-center">
                 {
                     items.map(({item, description, tools, url} : any) => {
-                        return <ProjectCard title={item} description={description} tools={tools} url={url}/>
+                        return <ProjectCard key={item} title={item} description={description} tools={tools} url={url}/>
                     })
                 }
             </div>
