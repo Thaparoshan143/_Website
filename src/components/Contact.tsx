@@ -1,5 +1,11 @@
 import React from 'react'
 
+interface ITextInput 
+{
+    label : string,
+    placeholder : string,
+};
+
 const Contact = () => {
   return (
     <div className="min-h-[50vh] h-[50vh] w-full flex flex-row text-theme-b bg-theme-w-alt" id="contact">
@@ -20,7 +26,7 @@ const Contact = () => {
   )
 }
 
-const TextInput = ({label, placeholder} : any) => {
+const TextInput = ({label, placeholder} : ITextInput) => {
     return (
         <div className="m-2 flex flex-row justify-between items-center w-full text-theme-w">
             <label className="text-theme-b font-bold">{label}</label>

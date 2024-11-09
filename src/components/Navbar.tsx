@@ -2,11 +2,17 @@ import React from 'react'
 import { _navItems } from '../../public/data/_navItems'
 import Link from 'next/link'
 
+interface INavItem
+{
+    title : string,
+    url : string,
+};
+
 const Navbar = () => {
   return (
     <nav className="w-full p-2 py-3 flex flex-row justify-evenly items-center px-[20%] bg-theme-b backdrop-filter backdrop-blur-sm fixed top-0 left-0">
         {
-            _navItems.map(({title, url} : any) => {
+            _navItems.map(({title, url}) => {
                 return <NavItem key={title} title={title} url={url} />
             })
         }
@@ -15,7 +21,7 @@ const Navbar = () => {
   )
 }
 
-const NavItem = ({title, url} : any) =>
+const NavItem = ({title, url} : INavItem) =>
 {
     return (
         <Link href={url} className="text-theme-w hover:text-theme-alt font-bold font-main text-note hover:underline transition-all duration-300">{title}</Link>
