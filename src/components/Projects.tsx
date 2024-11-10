@@ -22,7 +22,7 @@ const Projects = () => {
 
   return (
     <div className="w-full text-theme-w bg-theme pt-24 " id="projects">
-        <h1 className="text-large text-center text-theme-w font-bold uppercase mb-16">Projects</h1>
+        <h1 className="text-large text-center text-theme-w font-bold uppercase mb-16">Hands on Projects</h1>
         <div className="flex flex-row justify-evenly items-center w-full">
             <div  className="flex flex-col justify-evenly items-center w-[75%]">
                 {
