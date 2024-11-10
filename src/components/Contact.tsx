@@ -10,10 +10,9 @@ interface ITextInput
 const Contact = () => {
   return (
     <div className="min-h-[50vh] h-[50vh] w-full flex flex-row text-theme-w bg-theme-w-alt" id="contact">
-        {/* <span className="text-theme-b text-heading font-extrabold font-main-alt uppercase m-10">Connect with Me</span> */}
         <div className="w-[30%] h-full flex flex-col justify-center items-center">
-            <span className="text-heading m-8 text-theme-b font-main uppercase font-bold">Looking for CV?</span>
-            <button className="text-theme-w text-heading hover:bg-theme-b bg-theme-b-alt p-2 px-4 rounded-md font-bold font-main-alt transition-all duration-200 uppercase">Download</button>
+            <span className="text-title p-8 text-theme-b captalize font-bold">Want More Details?</span>
+            <button className="text-theme-w text-heading hover:bg-theme-b bg-theme-b-alt p-2 px-4 rounded-md font-bold font-main-alt transition-all duration-200 uppercase">Download CV</button>
         </div>
         <PiLineVerticalThin className="text-[18rem] text-theme-b h-full"/>
         <div className="w-[60%] h-full flex flex-col justify-evenly items-center">

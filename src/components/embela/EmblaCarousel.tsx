@@ -45,7 +45,7 @@ const EmblaCarouselCertification = () => {
               const {title, url} = prop;
               return (
                 <div key={title} className={'embla__slide py-4'}>
-                  <img src={url} alt={title} className={"min-h-[20rem] max-h-[25rem] mx-auto transition-all duration-300 ".concat((index == selectedIndex) ? " shadow-xl " : " opacity-20  scale-75 ")} />
+                  <img src={url} alt={title} className={"min-h-[18rem] max-h-[25rem] mx-auto transition-all duration-300 ".concat((index == selectedIndex) ? " shadow-xl " : " opacity-20  scale-75 ")} />
                 </div>
               )
             })
@@ -105,7 +105,7 @@ const EmblaCarouselProjects = (props : any) => {
   }, [emblaMainApi, onSelect])
 
   return (
-    <div className="embla w-full">
+    <div className="embla w-[95%]">
       <div className="overflow-hidden" ref={emblaMainRef}>
         <div className="embla__container flex">
           {
@@ -124,7 +124,7 @@ const EmblaCarouselProjects = (props : any) => {
 
       <div className="embla-thumbs">
         <div className="overflow-hidden" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container mt-24  w-full flex flex-row justify-evenly text-note">
+          <div className="embla-thumbs__container mt-10  w-full flex flex-row justify-evenly text-note">
             {
               projectItem.map((props : any, index : number) => {
                     return (
