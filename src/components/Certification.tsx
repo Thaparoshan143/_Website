@@ -2,12 +2,12 @@
 
 import React from 'react'
 import { _certificates } from '../../public/data/_certificates'
-import EmblaCarouselCertification from './embla/EmblaCarousel'
+import { EmblaCarouselCertification } from './embela/EmblaCarousel'
  
 const Certification = () => {
   return (
-    <div className="min-h-screen w-full flex flex-col justify-evenly items-center bg-theme">
-        <h1 className="text-6xl mt-12 text-theme-w uppercase font-main">Certifications</h1>
+    <div className="min-h-[60vh] p-10 pt-24  w-full flex flex-col justify-evenly items-center bg-theme">
+        <h1 className="text-large mt-12 text-theme-w uppercase  font-bold">Certifications</h1>
         <EmblaCarouselCertification />
     </div>
   )

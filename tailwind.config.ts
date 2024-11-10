@@ -20,6 +20,8 @@ export default {
       fontSize: {
         "extra-large" : "6rem",
         "r-extra-large" : "6em",
+        "large" : "4rem",
+        "r-large" : "4em",
         "heading" : "2rem",
         "r-heading" : "2em",
         "title" : "1.5rem",

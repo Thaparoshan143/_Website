@@ -11,13 +11,13 @@ interface IProjectCard
 
 const ProjectCard = ({item, description, tools, url} : IProjectCard) => {
     return (
-        <div className="min-h-[15rem] min-w-[20rem] w-[22rem] bg-theme border-2 border-theme-b rounded-md flex flex-col justify-between items-center hover:scale-105 transition-all duration-300">
-            <h1 className="bg-theme-b w-full py-4 text-theme-w text-stitle uppercase font-bold font-main">{item}</h1>
-            <p className="m-2">{description}</p>
+        <div className="min-h-[18rem] min-w-[20rem] w-[25rem] mx-auto bg-theme-b rounded-md flex flex-col justify-between items-center text-center">
+            <h1 className="bg-theme-w w-full py-4 text-theme-b text-stitle uppercase font-extrabold ">{item}</h1>
+            <p className="m-2 mx-5 font-light text-justify">{description}</p>
             <div className="p-2 flex flex-row justify-evenly items-center">
                 {
                     tools.map((item : string) => {
-                        return <li key={item} className="mx-2 p-2 min-w-[3rem] bg-theme-b hover:bg-theme-b-alt text-theme-w rounded-md text-little list-none transition-all duration-200 cursor-pointer">{item}</li>
+                        return <li key={item} className="mx-2 p-2 min-w-[3rem] bg-theme-alt hover:bg-theme text-theme-w rounded-md text-little list-none transition-all duration-200 cursor-pointer">{item}</li>
                     })
                 }
             </div>

@@ -10,5 +10,5 @@ export const _navItems = [
     {
         title : "Know Me",
         url : "#knowme"
-    }
+    },
 ]

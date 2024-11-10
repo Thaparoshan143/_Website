@@ -23,7 +23,7 @@ export const _projectList = [
         ]
     },
     {
-        type : "Software/App",
+        type : "Applications",
         subItem : [
             {
                 item : "Review and Voting System",
@@ -36,7 +36,7 @@ export const _projectList = [
                 description : "Application made with Unity designed to serve the need of the Inter-School Quiz Contest oraganized by SXJ",
                 tools : ["Unity", "C#"],
                 url : "https://drive.google.com/drive/folders/1i78RFwqSctB2Jqs3WTGGWpF8SJ87eW2z"
-            }
+            },
         ]
     },
     {
