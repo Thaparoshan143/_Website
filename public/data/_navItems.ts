@@ -8,7 +8,11 @@ export const _navItems = [
         url : "#projects"
     },
     {
-        title : "Know Me",
-        url : "#knowme"
+        title : "Experience",
+        url : "#experience"
+    },
+    {
+        title : "Certification",
+        url : "#certification"
     },
 ]
