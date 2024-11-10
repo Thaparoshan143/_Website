@@ -9,7 +9,7 @@ const Experience = () => {
         <div className="grid grid-cols-3 justify-items-center">
             {
                 _majorSkills.map(({field, subItem}) => {
-                    return <SkillItem field={field} subItem={subItem} />
+                    return <SkillItem key={field} field={field} subItem={subItem} />
                 })
             }
         </div>

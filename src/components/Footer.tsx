@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-row justify-evenly items-center mx-[35%]">
             {
                 _socialHandles.map(({media, url}) => {
-                    return <SocialIcons media={media} url={url} />
+                    return <SocialIcons key={media} media={media} url={url} />
                 })
             }
         </div>
