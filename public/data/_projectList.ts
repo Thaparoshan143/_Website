@@ -1,87 +1,101 @@
 export const _projectList = [
     {
-        type : "Web Programs",
+        type : "Major Projects",
         subItem : [
             {
-                item : "Web Utility",
-                description : "Web Based Program created from React JS desgined to serve the speed working with desgines and code generation",
-                tools : ["React JS","HTML","CSS","JS"],
-                url : "https://github.com/Thaparoshan143/WebUtility_react"
+                item : "Review/Voting - 2022",
+                description : "Science Exhibition review/voting program for COAS in SRSSS",
+                tools : ["Unity"],
+                url : "https://drive.google.com/drive/u/2/folders/1HX-0CAyoT3Dtj9pyIDUuQrvkjLRn1ley"
             },
             {
-                item : "Intra School Quiz SXJ",
-                description : "Web Based Program desgined to serve the need of Quiz Contest inside SXJ Premises",
-                tools : ["HTML","CSS","JS"],
-                url : "https://drive.google.com/drive/folders/1kt8hL7HuYp5Zvi1MkAiAaoJJewIbu-Ph"
+                item : "JSQ - 2021/2022",
+                description : "Quiz Program for joint school in St. Xavier's School",
+                tools : ["HTML", "CSS", "JS", "Unity"],
+                url : "https://drive.google.com/drive/u/2/folders/1qIceUs7rYLkySGzfc-gd9AMjQwqbJctI"
             },
             {
-                item : "SXJ MCQS Quiz",
-                description : "Web Based Program desgined to for organzining High school MCQS Contest within classes",
-                tools : ["HTML","CSS","JS"],
-                url : "https://drive.google.com/drive/folders/1QknB85wG_DAC38vcQnPdnFNu2K-Blg-T"
-            }
-        ]
-    },
-    {
-        type : "Applications",
-        subItem : [
-            {
-                item : "Review and Voting System",
-                description : "Application made inside Unity to serve the need of review system and voting system program in COAS (Science Exhibition)",
-                tools : ["Unity", "C#"],
-                url : "https://drive.google.com/drive/folders/1CogkgVoLMab7Rn8X7FAmRhpQrcPxnMry"
+                item : "MViz - 2023",
+                description : "Mathematical Visualization Program to plot mathematical functions and visualzing - College OOP Project",
+                tools : ["C++", "OpenGL", "GLFW"],
+                url : "https://github.com/Thaparoshan143/MViz"
             },
             {
-                item : "Joint School SXJ Quiz",
-                description : "Application made with Unity designed to serve the need of the Inter-School Quiz Contest oraganized by SXJ",
-                tools : ["Unity", "C#"],
-                url : "https://drive.google.com/drive/folders/1i78RFwqSctB2Jqs3WTGGWpF8SJ87eW2z"
+                item : "FuimGR - 2024",
+                description : "3D Interactive Graphics Renderer for interacting with scene/environment and loading model along with property manipulation - College Graphics Project",
+                tools : ["C++", "OpenGL", "GLFW", "ImGui", "Assimp"],
+                url : "https://github.com/Thaparoshan143/FuimGR_OpenGL/tree/release"
             },
         ]
     },
     {
-        type : "Programs",
+        type : "Personal Projects",
         subItem : [
             {
-                item : "Mini Projects with C",
-                description : "Written in C, containing different varities of programs to serve specific need and also can be added to any project as per required",
-                tools : ["C"],
-                url : "https://intriguing-steam-75f.notion.site/Mini-Projects-with-C-57801b3a17204c6c877660808901c275"
-            }
-        ]
-    },
-    {
-        type : "Utility Programs",
-        subItem : [
+                item : "Helpmeout",
+                description : "Utility website for all the required resource at one place",
+                tools : ["Next.js", "Tailwind CSS"],
+                url : "https://github.com/Thaparoshan143/HelpMeOut_Nextjs"
+            },
             {
-                item : "Stock Market Price Parser",
-                description : "Program wriiten in Python, with beautiful soup plugin focused to get current Stock Market Price of given script and tolerance given for any task",
-                tools : ["Python", "Beautiful Soup"],
-                url : "https://github.com/Thaparoshan143/Stock_WebScr_python"
+                item : "Dealsup*",
+                description : "Ecommerce site for Vendors and Sellers",
+                tools : ["React.js", "CSS"],
+                url : "https://github.com/Thaparoshan143/Dealsup_React"
+            },
+            {
+                item : "RSP",
+                description : "Portfolio Management",
+                tools : ["React.js", "CSS"],
+                url : "https://github.com/Thaparoshan143/ProjectRSP_React/blob/main/package.json"
+            },
+            {
+                item : "Portfolio",
+                description : "Personal Website",
+                tools : ["React.js", "Next.js", "Tailwind CSS", "Embla", "Framer Motion"],
+                url : "https://github.com/Thaparoshan143/_Website"
+            },
+            {
+                item : "StockBot",
+                description : "Stock Market related Automation",
+                tools : ["Python", "Selenium", "Webdriver", "BeautifulSoup", "webbrowser"],
+                url : "https://github.com/Thaparoshan143/StockBot_Python"
             },
             {
                 item : "React Starter",
-                description : "Program wriiten in Python, desgined to serve the new setup and easy component adding feature for React JS with simple oneclick run",
+                description : "Program wriiten in Python, for ease new setup and component adding feature for React.js with simple script",
                 tools : ["Python"],
                 url : "https://github.com/Thaparoshan143/webBoiGen_Python"
-            },
-            {
-                item : "RLibrary",
-                description : "Library written in C++, which comes with bunch of useful functions and classes to speed up the fresh projects",
-                tools : ["C++"],
-                url : "https://github.com/Thaparoshan143/Rlibrary"
             }
         ]
     },
     {
-        type : "3D Modeling/Game Development",
+        type : "Contribution/Others",
         subItem : [
             {
-                item : "3D Models and Games",
-                description : "Projects done on Blender and Unity for learning and getting hands on with different way of making Models, render images, animation and along with Games made in Unity Game Engine",
+                item : "3D Designs and Games",
+                description : "Projects done on Blender and Unity for learning Youtube Video",
                 tools : ["Unity", "Blender"],
                 url : "https://www.youtube.com/@roshanthapa1297/videos"
-            }
+            },
+            {
+                item : "Team Shireto",
+                description : "Website (new) for Team Shireto as lead developer",
+                tools : ["React.js", "Tailwind CSS"],
+                url : "https://github.com/Thaparoshan143/TeamShiretoWebsite_React"
+            },
+            {
+                item : "Ecast",
+                description : "Ecast club website construction as contributor",
+                tools : ["React.js", "Tailwind CSS", "Vite"],
+                url : "https://github.com/Thaparoshan143/ECAST-Web-Frontend"
+            },
+            {
+                item : "Yathartha",
+                description : "Techfest Yathertha website construction as contributor",
+                tools : ["React.js", "Tailwind CSS", "Vite"],
+                url : "https://github.com/ecastthapathali/Yathartha"
+            },
         ]
-    }
+    },
 ];
