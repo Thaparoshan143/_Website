@@ -10,7 +10,7 @@ interface INavItem
 
 const Navbar = () => {
   return (
-    <nav className="w-full p-2 py-3 flex flex-row justify-evenly items-center px-[20%] bg-theme-b backdrop-filter backdrop-blur-sm fixed top-0 left-0">
+    <nav className="w-full z-10 p-2 py-3 flex flex-row justify-evenly items-center px-[20%] bg-theme-b backdrop-filter backdrop-blur-sm fixed top-0 left-0">
         {
             _navItems.map(({title, url}) => {
                 return <NavItem key={title} title={title} url={url} />

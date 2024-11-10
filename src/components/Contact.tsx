@@ -8,7 +8,7 @@ interface ITextInput
 
 const Contact = () => {
   return (
-    <div className="min-h-[50vh] h-[50vh] w-full flex flex-row text-theme-b bg-theme-w-alt" id="contact">
+    <div className="min-h-[50vh] h-[50vh] w-full flex flex-row text-theme-w" id="contact">
         {/* <span className="text-theme-b text-heading font-extrabold font-main-alt uppercase m-10">Connect with Me</span> */}
         <div className="w-[30%] h-full flex flex-col justify-center items-center">
             <span className="text-heading m-8 font-main uppercase font-bold">Looking for CV?</span>

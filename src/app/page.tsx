@@ -1,3 +1,4 @@
+import Certification from "@/components/Certification";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Home from "@/components/Home";
@@ -15,8 +16,9 @@ export default function App() {
         </div>
         <Link href={"#home"} className="p-2 px-4 bg-theme-alt text-r-stitle text-theme-w hover:bg-theme font-main rounded-md my-[1rem] transition-all">Explore</Link>
       </div>
-      <Home />
+      {/* <Home /> */}
       <Projects />
+      <Certification />
       <KnowMe />
       <Contact />
       <Footer />

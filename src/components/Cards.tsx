@@ -11,7 +11,7 @@ interface IProjectCard
 
 const ProjectCard = ({item, description, tools, url} : IProjectCard) => {
     return (
-        <div className="min-h-[15rem] min-w-[20rem] w-[22rem] border-2 border-theme-b rounded-md flex flex-col justify-between items-center hover:scale-105 transition-all duration-300">
+        <div className="min-h-[15rem] min-w-[20rem] w-[22rem] bg-theme border-2 border-theme-b rounded-md flex flex-col justify-between items-center hover:scale-105 transition-all duration-300">
             <h1 className="bg-theme-b w-full py-4 text-theme-w text-stitle uppercase font-bold font-main">{item}</h1>
             <p className="m-2">{description}</p>
             <div className="p-2 flex flex-row justify-evenly items-center">
