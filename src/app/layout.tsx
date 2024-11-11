@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./embla.css";
-import Image from "next/image";
 import bg from "../../public/images/bg.jpeg"
 import Navbar from "@/components/Navbar";
 

@@ -14,7 +14,7 @@ interface ITextInput
 
 const Contact = () => {
 
-    const submitForm = (e : any) =>
+    const submitForm = (e : React.FormEvent) =>
     {
         e.preventDefault();
         alert("Recieved\nName : " + name + " | Email : " + email + " | message : " + message + "\nNote: this is not connected to backend");

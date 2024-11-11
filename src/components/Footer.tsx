@@ -3,6 +3,12 @@ import { FaFacebook, FaGithub, FaHeartbeat, FaLinkedin, FaYoutube } from 'react-
 import { _socialHandles } from '../../public/data/_info'
 import Link from 'next/link'
 
+interface ISocialIcons
+{
+    media : string,
+    url : string,
+};
+
 const Footer = () => {
   return (
     <footer className="bg-theme text-white min-h-[25vh] w-full text-center flex flex-col justify-around items-center py-6">
@@ -20,7 +26,7 @@ const Footer = () => {
   )
 }
 
-const SocialIcons = ({media, url} : any) => {
+const SocialIcons = ({media, url} : ISocialIcons) => {
     const socialIconStyle = "text-title mx-4 hover:scale-110 hover:cursor-pointer transition-all duration-300"
 
     if (media == "Facebook")

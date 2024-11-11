@@ -3,13 +3,14 @@
 import React from 'react'
 import { useState } from 'react'
 import { _projectList } from '../../public/data/_projectList'
-import { ProjectCard, IProjectCard } from './Cards'
 import { EmblaCarouselProjects } from './embela/EmblaCarousel'
 
-interface IProjectsItem
+interface IProjectList
 {
-    type : string,
-    items : IProjectCard[],
+    type : string, 
+    activeType : number,
+    index : number,
+    changeType : (ind : number) => void
 }
 
 const Projects = () => {
@@ -29,7 +30,7 @@ const Projects = () => {
                     _projectList.map((props, index) => {
                         if (index === selectedType)
                         {
-                            return  <EmblaCarouselProjects key={index} projectItem={props.subItem} />
+                            return  <EmblaCarouselProjects key={index} subItem={props.subItem} />
                         }
                         return;
                     })
@@ -48,7 +49,7 @@ const Projects = () => {
   )
 }
 
-const ProjectList = (props : any) => {
+const ProjectList = (props : IProjectList) => {
     return (
         <div className={"py-20 px-4 w-full cursor-pointer text-title font-bold hover:bg-theme-b hover:text-theme-w transition-all duration-500 ".concat((props.activeType === props.index) ? " bg-theme-b text-theme-w " : "  bg-theme-w text-theme-b ")} onClick={() => props.changeType(props.index)}>
             {props.type}

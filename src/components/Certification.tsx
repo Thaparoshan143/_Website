@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { _certificates } from '../../public/data/_certificates'
 import { EmblaCarouselCertification } from './embela/EmblaCarousel'
  
 const Certification = () => {

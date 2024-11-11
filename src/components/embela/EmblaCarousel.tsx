@@ -4,8 +4,20 @@ import React, { useState, useEffect, useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { Thumb } from './EmblaCarouselThumbsButton'
 import { _certificates } from '../../../public/data/_certificates'
-import { _projectList } from '../../../public/data/_projectList'
 import { ProjectCard } from '../Cards'
+
+interface IProjectSubItem
+{
+  item : string,
+  description : string,
+  tools : string[],
+  url : string,
+};
+
+interface IProjectItem
+{
+  subItem : IProjectSubItem[];
+};
 
 const EmblaCarouselCertification = () => {
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -62,7 +74,6 @@ const EmblaCarouselCertification = () => {
                 onClick={() => onThumbClick(index)}
                 selected={index === selectedIndex}
                 title={prop.title}
-                index={index}
               />
             ))}
           </div>
@@ -73,9 +84,9 @@ const EmblaCarouselCertification = () => {
 }
 
 
-const EmblaCarouselProjects = (props : any) => {
+const EmblaCarouselProjects = (props : IProjectItem) => {
 
-  const {projectItem} = props;
+  const {subItem} = props;
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel({})
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -109,7 +120,7 @@ const EmblaCarouselProjects = (props : any) => {
       <div className="overflow-hidden" ref={emblaMainRef}>
         <div className="embla__container flex">
           {
-            projectItem.map((props : any, index : number) => {
+            subItem.map((props : IProjectSubItem, index : number) => {
                 const {item, description, tools, url} = props;
                 return (
                 <div key={index} className={'embla_def__slide py-4'.concat((index == selectedIndex) ? " shadow-xl " : " opacity-20  scale-75 ")}>
@@ -126,14 +137,13 @@ const EmblaCarouselProjects = (props : any) => {
         <div className="overflow-hidden" ref={emblaThumbsRef}>
           <div className="embla-thumbs__container mt-10  w-full flex flex-row justify-evenly text-note">
             {
-              projectItem.map((props : any, index : number) => {
+              subItem.map((props : IProjectSubItem, index : number) => {
                     return (
                       <Thumb
                         key={index}
                         onClick={() => onThumbClick(index)}
                         selected={index === selectedIndex}
                         title={props.item}
-                        index={index}
                       />)
                   })
             }
