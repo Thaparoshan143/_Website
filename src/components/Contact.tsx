@@ -3,6 +3,7 @@
 import React from 'react'
 import { PiLineVerticalThin } from 'react-icons/pi'
 import { useState } from 'react'
+import { motion } from "framer-motion"
 
 interface ITextInput 
 {
@@ -31,7 +32,15 @@ const Contact = () => {
     <div className="min-h-[50vh] h-[50vh] w-full flex flex-row text-theme-w bg-theme-w-alt" id="contact">
         <div className="w-[30%] h-full flex flex-col justify-center items-center">
             <span className="text-title p-8 text-theme-b captalize font-bold">Want More Details?</span>
-            <button className="text-theme-w text-heading hover:bg-theme-b bg-theme-b-alt p-2 px-4 rounded-md font-bold font-main-alt transition-all duration-200 uppercase">Download CV</button>
+            <motion.button 
+                className="text-theme-w text-heading hover:bg-theme-b bg-theme-b-alt p-2 px-4 rounded-md font-bold font-main-alt transition-all duration-200 uppercase"
+                initial={{ y: "50%", opacity: 0, scale: 0 }}
+                whileInView={{ y: 0, opacity: 1, scale : "100%" }}
+                viewport={{ once: false }} // Trigger animation only once
+                transition={{ duration: 0.5 }}
+            >
+                Download CV
+            </motion.button>
         </div>
         <PiLineVerticalThin className="text-[18rem] text-theme-b h-full"/>
         <div className="w-[60%] h-full flex flex-col justify-evenly items-center">

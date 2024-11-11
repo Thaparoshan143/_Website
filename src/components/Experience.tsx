@@ -1,5 +1,8 @@
+'use client'
+
 import React from 'react'
 import { _aboutMe, _majorSkills } from '../../public/data/_info'
+import { motion } from "framer-motion"
 
 interface ISkillSubItem
 {
@@ -18,13 +21,19 @@ const Experience = () => {
     <div className="min-h-[100vh] w-full py-24" id="experience">
         <h1 className="text-large text-center text-theme-w font-bold uppercase font-main">Experience</h1>
         <span className="text-note font-bold w-[50%] my-10 m-auto text-theme-w block">{_aboutMe}</span>
-        <div className="grid grid-cols-3 justify-items-center">
+        <motion.div 
+            className="grid grid-cols-3 justify-items-center"
+            initial={{ y: "50%", opacity: 0, scale : "50%"}}
+            whileInView={{ y: 0, opacity: 1, scale: "100%" }}
+            viewport={{ once: false }} // Trigger animation only once
+            transition={{ duration: 1 }}
+        >
             {
                 _majorSkills.map(({field, subItem}) => {
                     return <SkillItem key={field} field={field} subItem={subItem} />
                 })
             }
-        </div>
+        </motion.div>
     </div>
   )
 }
