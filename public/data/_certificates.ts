@@ -9,15 +9,15 @@ export const _certificates = [
     },
     {
         title : "C++ Basic",
-        url : "/images/certificates/C++ Basics.png"
+        url : "/images/certificates/Cpp Basics.png"
     },
     {
         title : "C++ Master",
-        url : "/images/certificates/C++ Master.png"
+        url : "/images/certificates/Cpp Master.png"
     },
     {
         title : "C++ OOP",
-        url : "/images/certificates/C++ OOP.png"
+        url : "/images/certificates/Cpp OOP.png"
     },
     {
         title : "CP",
