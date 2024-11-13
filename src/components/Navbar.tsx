@@ -48,7 +48,7 @@ const Navbar = () => {
         </nav>
         {
             isMobileMenu ? 
-            <button onClick={()=> toggleNav()} className={"bg-theme-w-alt hover:bg-theme-w p-2 rounded-[50%] hover:shadow-xl fixed top-5 right-5 z-20"}>
+            <button onClick={()=> toggleNav()} className={"bg-theme-w p-2 rounded-[50%] shadow-md shadow-gray-600 fixed top-4 right-4 z-20"}>
             { !isNavOpen ? <IoMdMenu className="text-title text-theme" /> : <IoMdClose className="text-title text-theme "  />}
             </button> 
             : <></>
