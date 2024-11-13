@@ -11,8 +11,8 @@ export const Thumb: React.FC<PropType> = (props) => {
 
   return (
     <div
-      className={'rounded-xl transition-all p-1 duration-200 min-w-[10rem] w-full '.concat(
-        selected ? ' bg-theme-b text-theme-w ' : ' scale-75  hover:bg-theme-w-alt bg-theme-w text-theme-b'
+      className={'rounded-xl transition-all mx-2 p-1 px-2 duration-300 min-w-[10rem]  '.concat(
+        selected ? ' bg-theme-b text-theme-w translate-y-[-10px] ' : '  hover:bg-theme-w-alt bg-theme-w text-theme-b'
       )}
     >
       <button

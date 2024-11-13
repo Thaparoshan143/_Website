@@ -49,15 +49,15 @@ const EmblaCarouselCertification = () => {
   }, [emblaMainApi, onSelect])
 
   return (
-    <div className="embla">
+    <div className="embla w-full">
       <div className="overflow-hidden" ref={emblaMainRef}>
-        <div className="embla__container  flex">
+        <div className="embla__container flex md:w-full">
           {
             _certificates.map((prop, index) => {
               const {title, url} = prop;
               return (
                 <div key={title} className={'embla__slide py-4'}>
-                  <img src={url} alt={title} className={"min-h-[18rem] max-h-[25rem] mx-auto transition-all duration-300 ".concat((index == selectedIndex) ? " shadow-xl " : " opacity-20  scale-75 ")} />
+                  <img src={url} alt={title} className={"min-h-[18rem] max-w-[25rem] xl:max-w-[35rem] max-h-[22rem] xl:max-h-[30rem] mx-auto transition-all duration-300 ".concat((index == selectedIndex) ? " shadow-xl " : " opacity-20  scale-75 ")} />
                 </div>
               )
             })
@@ -67,7 +67,7 @@ const EmblaCarouselCertification = () => {
 
       <div className="embla-thumbs">
         <div className="overflow-hidden" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container flex flex-row text-stitle">
+          <div className="embla-thumbs__container mt-10 w-full flex flex-row justify-evenly sm:text-note text-sm">
             {_certificates.map((prop, index) => (
               <Thumb
                 key={index}
@@ -135,7 +135,7 @@ const EmblaCarouselProjects = (props : IProjectItem) => {
 
       <div className="embla-thumbs">
         <div className="overflow-hidden" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container mt-10  w-full flex flex-row justify-evenly sm:text-note text-sm">
+          <div className="embla-thumbs__container mt-10 w-full flex flex-row justify-evenly sm:text-note text-sm">
             {
               subItem.map((props : IProjectSubItem, index : number) => {
                     return (
