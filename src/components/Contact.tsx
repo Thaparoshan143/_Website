@@ -61,7 +61,7 @@ const TextInput = ({label, placeholder, value, onChange} : ITextInput) => {
     return (
         <div className="m-2 flex flex-row justify-between items-center w-full text-theme-w">
             <label className="text-theme-b font-bold">{label}</label>
-            <input onChange={(e)=>onChange(e.target.value)} type={"text"} placeholder={placeholder} className={"p-2 w-[80%] rounded-md text-theme-b "}/>
+            <input onChange={(e)=>onChange(e.target.value)} value={value} type={"text"} placeholder={placeholder} className={"p-2 w-[80%] rounded-md text-theme-b "}/>
         </div>
     )
 }
