@@ -19,14 +19,14 @@ interface ISkillItem
 const Experience = () => {
   return (
     <div className="min-h-[100vh] w-full py-24" id="experience">
-        <h1 className="text-large text-center text-theme-w font-bold uppercase font-main">Experience</h1>
+        <h1 className="sm:text-large text-sup-heading text-center text-theme-w font-bold uppercase font-main">Experience</h1>
         <span className="text-note font-bold w-[50%] my-10 m-auto text-theme-w block">{_aboutMe}</span>
         <motion.div 
-            className="grid grid-cols-3 justify-items-center"
-            initial={{ y: "50%", opacity: 0, scale : "50%"}}
+            className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 justify-items-center"
+            initial={{ y: "25%", opacity: 0, scale : "50%"}}
             whileInView={{ y: 0, opacity: 1, scale: "100%" }}
             viewport={{ once: false }} // Trigger animation only once
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8 }}
         >
             {
                 _majorSkills.map(({field, subItem}) => {
@@ -40,7 +40,7 @@ const Experience = () => {
 
 const SkillItem = ({field, subItem} : ISkillItem) => {
     return (
-        <div className="min-w-[20rem] bg-theme-w-alt w-[25rem] mx-auto my-10 rounded-md flex flex-col justify-between items-center text-center hover:shadow-xl transition-all duration-300">
+        <div className="min-w-[20rem] bg-theme-w-alt w-[75%] md:w-[22rem] xl:w-[25rem] mx-auto rounded-md sm:my-4 my-1 flex flex-col justify-between items-center text-center hover:shadow-xl transition-all duration-300">
             <h1 className="bg-theme w-full py-4 text-theme-w text-stitle uppercase font-extrabold ">{field}</h1>
             <div className="p-2 w-full flex flex-row flex-wrap justify-evenly items-center min-h-[10rem]">
                 {
