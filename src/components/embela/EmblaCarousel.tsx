@@ -116,7 +116,7 @@ const EmblaCarouselProjects = (props : IProjectItem) => {
   }, [emblaMainApi, onSelect])
 
   return (
-    <div className="embla w-[95%]">
+    <div className="embla sm:w-[95%] w-[90%]">
       <div className="overflow-hidden" ref={emblaMainRef}>
         <div className="embla__container flex">
           {
@@ -135,7 +135,7 @@ const EmblaCarouselProjects = (props : IProjectItem) => {
 
       <div className="embla-thumbs">
         <div className="overflow-hidden" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container mt-10  w-full flex flex-row justify-evenly text-note">
+          <div className="embla-thumbs__container mt-10  w-full flex flex-row justify-evenly sm:text-note text-sm">
             {
               subItem.map((props : IProjectSubItem, index : number) => {
                     return (

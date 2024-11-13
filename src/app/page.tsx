@@ -10,11 +10,11 @@ export default function App() {
   return (
     <main className="flex flex-col justify-evenly items-center h-full w-full font-main">
       <div className="flex flex-col justify-around items-center h-full w-full min-h-[100vh]">
-        <div className="flex flex-col justify-evenly items-center my-[10%]">
-          <h1 className="text-extra-large text-theme font-bold uppercase -alt">{_name}</h1>
-          <span className="text-note font-light text-theme-w-alt ">{_description}</span>
+        <div className="flex flex-col justify-evenly items-center my-[10%] h-[50vh]">
+          <h1 className="sm:text-extra-large text-sup-large text-theme font-bold uppercase text-center">{_name}</h1>
+          <span className="text-note font-light text-theme-w-alt my-10">{_description}</span>
         </div>
-        <Link href={"#home"} className="p-2 px-4 bg-theme-alt text-r-stitle text-theme-w hover:bg-theme  rounded-md my-[1rem] transition-all">Explore</Link>
+        <Link href={"#projects"} className="p-2 px-4 bg-theme-alt text-stitle text-theme-w hover:bg-theme rounded-md transition-all">Explore</Link>
       </div>
       <Projects />
       <Experience />
