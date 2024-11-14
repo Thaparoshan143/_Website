@@ -1,6 +1,6 @@
 export const _projectList = [
     {
-        type : "Major Projects",
+        type : "Major",
         subItem : [
             {
                 item : "Review/Voting - 2022",
@@ -29,7 +29,7 @@ export const _projectList = [
         ]
     },
     {
-        type : "Personal Projects",
+        type : "Personal",
         subItem : [
             {
                 item : "Helpmeout",
@@ -70,7 +70,7 @@ export const _projectList = [
         ]
     },
     {
-        type : "Contribute/Other",
+        type : "Other",
         subItem : [
             {
                 item : "3D Designs and Games",

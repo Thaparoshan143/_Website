@@ -51,7 +51,7 @@ const Projects = () => {
 
 const ProjectList = (props : IProjectList) => {
     return (
-        <div className={"md:py-20 py-10 px-2 w-full cursor-pointer md:text-title sm:text-stitle text-note font-bold hover:bg-theme-b hover:text-theme-w transition-all duration-500".concat((props.activeType === props.index) ? " bg-theme-b text-theme-w " : "  bg-theme-w text-theme-b ")} onClick={() => props.changeType(props.index)}>
+        <div className={"md:py-20 py-10 px-1 w-full cursor-pointer md:text-title sm:text-stitle text-note font-bold hover:bg-theme-b hover:text-theme-w transition-all duration-500".concat((props.activeType === props.index) ? " bg-theme-b text-theme-w " : "  bg-theme-w text-theme-b ")} onClick={() => props.changeType(props.index)}>
             {props.type}
         </div>
     )
