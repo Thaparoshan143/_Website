@@ -70,7 +70,7 @@ export const _projectList = [
         ]
     },
     {
-        type : "Contribution/Others",
+        type : "Contribute/Other",
         subItem : [
             {
                 item : "3D Designs and Games",
