@@ -43,6 +43,45 @@ export const _majorSkills = [
         ]
     },
     {
+        field : "3D Artist",
+        subItem : [
+            {
+                item : "Blender",
+                iconpath : "/images/skillsIcon/Blender.png",
+            },
+            {
+                item : "Autodesk Maya",
+                iconpath : "/images/skillsIcon/Autodesk Maya.png",
+            },
+            {
+                item : "Unreal Engine*",
+                iconpath : "/images/skillsIcon/Unreal Engine.png",
+            },
+        ]
+    },
+    {
+        field : "Graphic APIs",
+        subItem : [
+            {
+                item : "OpenGL",
+                iconpath : "/images/skillsIcon/OpenGL.png",
+            },
+            // {
+            //     item : "Vulkan*",
+            //     iconpath : "/images/skillsIcon/Vulkan.png",
+            // },
+        ]
+    },
+    {
+        field : "Game Development",
+        subItem : [
+            {
+                item : "Unity*",
+                iconpath : "/images/skillsIcon/Unity.png",
+            },
+            ]
+    },
+    {
         field : "Web Development",
         subItem : [
             {
@@ -76,45 +115,6 @@ export const _majorSkills = [
             {
                 item : "Express*",
                 iconpath : "/images/skillsIcon/Express.png",
-            },
-        ]
-    },
-    {
-        field : "3D Artist",
-        subItem : [
-            {
-                item : "Blender",
-                iconpath : "/images/skillsIcon/Blender.png",
-            },
-            {
-                item : "Autodesk Maya",
-                iconpath : "/images/skillsIcon/Autodesk Maya.png",
-            },
-            {
-                item : "Unreal Engine*",
-                iconpath : "/images/skillsIcon/Unreal Engine.png",
-            },
-        ]
-    },
-    {
-        field : "Game Development",
-        subItem : [
-            {
-                item : "Unity*",
-                iconpath : "/images/skillsIcon/Unity.png",
-            },
-            ]
-    },
-    {
-        field : "Graphic APIs",
-        subItem : [
-            {
-                item : "OpenGL",
-                iconpath : "/images/skillsIcon/OpenGL.png",
-            },
-            {
-                item : "Vulkan*",
-                iconpath : "/images/skillsIcon/Vulkan.png",
             },
         ]
     },

@@ -1,19 +1,7 @@
 export const _projectList = [
     {
-        type : "Major",
+        type : "Graphics",
         subItem : [
-            {
-                item : "Review/Voting - 2022",
-                description : "Science Exhibition review/voting program for COAS in SRSSS",
-                tools : ["Unity"],
-                url : "https://drive.google.com/drive/u/2/folders/1HX-0CAyoT3Dtj9pyIDUuQrvkjLRn1ley"
-            },
-            {
-                item : "JSQ - 2021/2022",
-                description : "Quiz Program for joint school in St. Xavier's School",
-                tools : ["HTML", "CSS", "JS", "Unity"],
-                url : "https://drive.google.com/drive/u/2/folders/1qIceUs7rYLkySGzfc-gd9AMjQwqbJctI"
-            },
             {
                 item : "MViz - 2023",
                 description : "Mathematical Visualization Program to plot mathematical functions and visualzing - College OOP Project",
@@ -72,6 +60,18 @@ export const _projectList = [
     {
         type : "Other",
         subItem : [
+            {
+                item : "Review/Voting - 2022",
+                description : "Science Exhibition review/voting program for COAS in SRSSS",
+                tools : ["Unity"],
+                url : "https://drive.google.com/drive/u/2/folders/1HX-0CAyoT3Dtj9pyIDUuQrvkjLRn1ley"
+            },
+            {
+                item : "JSQ - 2021/2022",
+                description : "Quiz Program for joint school in St. Xavier's School",
+                tools : ["HTML", "CSS", "JS", "Unity"],
+                url : "https://drive.google.com/drive/u/2/folders/1qIceUs7rYLkySGzfc-gd9AMjQwqbJctI"
+            },
             {
                 item : "3D Designs and Games",
                 description : "Projects done on Blender and Unity for learning Youtube Video",

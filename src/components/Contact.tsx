@@ -38,7 +38,7 @@ const Contact = () => {
                 whileInView={{ y: 0, opacity: 1, scale : "100%" }}
                 viewport={{ once: false }} // Trigger animation only once
                 transition={{ duration: 0.5 }}
-                href="/files/Roshan Thapa CV.pdf"
+                href="/files/CV Roshan Thapa.pdf"
             >
                 Download CV
             </motion.a>

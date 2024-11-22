@@ -5,7 +5,7 @@ import bg from "../../public/images/bg.jpeg"
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Portfolio - CG",
   description: "Roshan Thapa",
 };
 
