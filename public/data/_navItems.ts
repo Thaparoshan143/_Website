@@ -1,18 +1,18 @@
 export const _navItems = [
     {
-        title : "Home",
-        url : "#home"
+        title: "Home",
+        url: "#home",
     },
     {
-        title : "Projects",
-        url : "#projects"
+        title: "Projects",
+        url: "#projects",
     },
     {
-        title : "Experience",
-        url : "#experience"
+        title: "Technology",
+        url: "#technology",
     },
     {
-        title : "Certification",
-        url : "#certification"
+        title: "Certification",
+        url: "#certification",
     },
-]
+];

@@ -1,101 +1,97 @@
 export const _projectList = [
     {
-        type : "Major",
-        subItem : [
+        type: "Web Development",
+        subItem: [
             {
-                item : "Review/Voting - 2022",
-                description : "Science Exhibition review/voting program for COAS in SRSSS",
-                tools : ["Unity"],
-                url : "https://drive.google.com/drive/u/2/folders/1HX-0CAyoT3Dtj9pyIDUuQrvkjLRn1ley"
+                item: "EIMS",
+                description: "POS web application for events attending sellers",
+                tools: ["Next.js", "Tailwind CSS", "PostgreSQL", "MongoDB"],
+                url: "https://github.com/Thaparoshan143/EIMS_Nextjs",
             },
             {
-                item : "JSQ - 2021/2022",
-                description : "Quiz Program for joint school in St. Xavier's School",
-                tools : ["HTML", "CSS", "JS", "Unity"],
-                url : "https://drive.google.com/drive/u/2/folders/1qIceUs7rYLkySGzfc-gd9AMjQwqbJctI"
+                item: "Team Shireto",
+                description: "Website (new) for Team Shireto as lead developer",
+                tools: ["React.js", "Tailwind CSS"],
+                url: "https://github.com/Thaparoshan143/TeamShiretoWebsite_React",
             },
             {
-                item : "MViz - 2023",
-                description : "Mathematical Visualization Program to plot mathematical functions and visualzing - College OOP Project",
-                tools : ["C++", "OpenGL", "GLFW"],
-                url : "https://github.com/Thaparoshan143/MViz"
+                item: "Yathartha",
+                description:
+                    "Techfest Yathertha website construction as contributor",
+                tools: ["React.js", "Tailwind CSS", "Vite"],
+                url: "https://github.com/ecastthapathali/Yathartha",
             },
             {
-                item : "FuimGR - 2024",
-                description : "3D Interactive Graphics Renderer for interacting with scene/environment and loading model along with property manipulation - College Graphics Project",
-                tools : ["C++", "OpenGL", "GLFW", "ImGui", "Assimp"],
-                url : "https://github.com/Thaparoshan143/FuimGR_OpenGL/tree/release"
+                item: "Catchup",
+                description:
+                    "Web application, All in one Cricket portal for Nepal",
+                tools: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL"],
+                url: "https://github.com/kpabin0/CatchUp",
             },
-        ]
+            {
+                item: "Helpmeout",
+                description:
+                    "Utility website for all the required resource at one place",
+                tools: ["Next.js", "Tailwind CSS"],
+                url: "https://github.com/Thaparoshan143/HelpMeOut_Nextjs",
+            },
+            {
+                item: "DoTLMViz",
+                description:
+                    "Transformer based LLM visualization (GPT-2 small)",
+                tools: ["Next.js", "Tailwind CSS"],
+                url: "https://github.com/Arktetra/DoTLMViz",
+            },
+        ],
     },
     {
-        type : "Personal",
-        subItem : [
+        type: "Graphics Programming",
+        subItem: [
             {
-                item : "Helpmeout",
-                description : "Utility website for all the required resource at one place",
-                tools : ["Next.js", "Tailwind CSS"],
-                url : "https://github.com/Thaparoshan143/HelpMeOut_Nextjs"
+                item: "MViz - 2023",
+                description:
+                    "Mathematical Visualization Program to plot mathematical functions and visualzing - College OOP Project",
+                tools: ["C++", "OpenGL", "GLFW"],
+                url: "https://github.com/Thaparoshan143/MViz",
             },
             {
-                item : "Dealsup*",
-                description : "Ecommerce site for Vendors and Sellers",
-                tools : ["React.js", "CSS"],
-                url : "https://github.com/Thaparoshan143/Dealsup_React"
+                item: "FuimGR - 2024",
+                description:
+                    "3D Interactive Graphics Renderer for interacting with scene/environment and loading model along with property manipulation - College Graphics Project",
+                tools: ["C++", "OpenGL", "GLFW", "ImGui", "Assimp"],
+                url: "https://github.com/Thaparoshan143/FuimGR_OpenGL/tree/release",
             },
-            {
-                item : "RSP",
-                description : "Portfolio Management",
-                tools : ["React.js", "CSS"],
-                url : "https://github.com/Thaparoshan143/ProjectRSP_React/blob/main/package.json"
-            },
-            {
-                item : "Portfolio",
-                description : "Personal Website",
-                tools : ["React.js", "Next.js", "Tailwind CSS", "Embla", "Framer Motion"],
-                url : "https://github.com/Thaparoshan143/_Website"
-            },
-            {
-                item : "StockBot",
-                description : "Stock Market related Automation",
-                tools : ["Python", "Selenium", "Webdriver", "BeautifulSoup", "webbrowser"],
-                url : "https://github.com/Thaparoshan143/StockBot_Python"
-            },
-            {
-                item : "React Starter",
-                description : "Program wriiten in Python, for ease new setup and component adding feature for React.js with simple script",
-                tools : ["Python"],
-                url : "https://github.com/Thaparoshan143/webBoiGen_Python"
-            }
-        ]
+        ],
     },
     {
-        type : "Other",
-        subItem : [
+        type: "Others",
+        subItem: [
             {
-                item : "3D Designs and Games",
-                description : "Projects done on Blender and Unity for learning Youtube Video",
-                tools : ["Unity", "Blender"],
-                url : "https://www.youtube.com/@roshanthapa1297/videos"
+                item: "JSQ - 2021/2022",
+                description:
+                    "Quiz Program for joint school in St. Xavier's School",
+                tools: ["HTML", "CSS", "JS", "Unity"],
+                url: "https://drive.google.com/drive/u/2/folders/1qIceUs7rYLkySGzfc-gd9AMjQwqbJctI",
             },
             {
-                item : "Team Shireto",
-                description : "Website (new) for Team Shireto as lead developer",
-                tools : ["React.js", "Tailwind CSS"],
-                url : "https://github.com/Thaparoshan143/TeamShiretoWebsite_React"
+                item: "CoAS - 2022",
+                description:
+                    "Science exhibition voting & feedback collection program from visitor.",
+                tools: ["Unity"],
+                url: "https://drive.google.com/drive/u/2/folders/1HX-0CAyoT3Dtj9pyIDUuQrvkjLRn1ley",
             },
             {
-                item : "Ecast",
-                description : "Ecast club website construction as contributor",
-                tools : ["React.js", "Tailwind CSS", "Vite"],
-                url : "https://github.com/Thaparoshan143/ECAST-Web-Frontend"
+                item: "StockBot",
+                description: "Stock Market related Automation",
+                tools: ["Python", "Selenium", "Webdriver", "BeautifulSoup"],
+                url: "https://github.com/Thaparoshan143/StockBot_Python",
             },
             {
-                item : "Yathartha",
-                description : "Techfest Yathertha website construction as contributor",
-                tools : ["React.js", "Tailwind CSS", "Vite"],
-                url : "https://github.com/ecastthapathali/Yathartha"
+                item: "Misc.",
+                description: "Basic Operation portal for pdf, images, etc",
+                tools: ["Python", "Streamlit", "cv2", "webbrowser"],
+                url: "https://github.com/Thaparoshan143/Miscellaneous_streamlit",
             },
-        ]
+        ],
     },
 ];
