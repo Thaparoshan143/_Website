@@ -11,7 +11,6 @@ interface ITextInput {
     value: string;
     required?: boolean;
     onChange: (val: string) => void;
-    children?: any;
 }
 
 const Contact = () => {
