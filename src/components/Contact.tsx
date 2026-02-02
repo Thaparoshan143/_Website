@@ -4,6 +4,7 @@ import React from "react";
 import { PiLineVerticalThin } from "react-icons/pi";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { cPost } from "@/util/axios";
 
 interface ITextInput {
     label: string;
@@ -16,20 +17,43 @@ interface ITextInput {
 const Contact = () => {
     const submitForm = (e: React.FormEvent) => {
         e.preventDefault();
-        alert(
-            "Recieved\nName : " +
-                name +
-                " | Email : " +
-                email +
-                " | message : " +
-                message +
-                "\nNote: this is not connected to backend"
-        );
+        // alert(
+        //     "Recieved\nName : " +
+        //         name +
+        //         " | Email : " +
+        //         email +
+        //         " | message : " +
+        //         message +
+        //         "\nNote: this is not connected to backend"
+        // );
+
+        const emailValidator = (e: string) => {
+            const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            return regex.test(e);
+        }
+        // validating the form first..
+        if (!emailValidator(email)) {
+            alert("Invalid email address! Check email again");
+            return;
+        }
+
+        cPost("/contact", {
+            name,
+            email,
+            message
+        }).then((d) => {
+            if (d) {
+                alert("Information recorded successful");
+                setName("");
+                setEmail("");
+                setMessage("");
+            } else {
+                alert("Unable to complete request! try again!");
+            }
+        });
         // console.log("Name : " + name + " | Email : " + email + " | message : " + message);
         // If clearning not required then remove or comment line below
-        setName("");
-        setEmail("");
-        setMessage("");
+
     };
 
     const [name, setName] = useState("");
