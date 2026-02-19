@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { EmblaCarouselCertification } from "./embela/EmblaCarousel";
 import { motion } from "framer-motion";
 

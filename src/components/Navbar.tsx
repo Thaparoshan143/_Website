@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { _navItems } from "../../public/data/_navItems";
 import Link from "next/link";
 import { useState, useEffect } from "react";

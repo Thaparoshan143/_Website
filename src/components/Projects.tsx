@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import { useState } from "react";
 import { _projectList } from "../../public/data/_projectList";
 import { EmblaCarouselProjects } from "./embela/EmblaCarousel";

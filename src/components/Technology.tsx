@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import {  _majorSkills } from "../../public/data/_info";
+import { _majorSkills } from "../../public/data/_info";
 import { motion } from "framer-motion";
 
 interface ISkillSubItem {

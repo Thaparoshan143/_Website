@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const axiosIns = axios.create({
-    baseURL: '/api',
+    baseURL: "/api",
     headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
     },
 });
 
@@ -12,9 +12,8 @@ const axiosIns = axios.create({
  * args: url
  */
 export const cGet = async (url: string) => {
-    
     try {
-        if (url == '') {
+        if (url == "") {
             console.error("URL is blank!!");
             return null;
         }
@@ -26,17 +25,15 @@ export const cGet = async (url: string) => {
         console.error(error);
         return null;
     }
-}
-
+};
 
 /**
  * Custom POST request wrapper from urls (Axios based)..
  * args: url, data (post object)
  */
 export const cPost = async (url: string, data: any) => {
-    
     try {
-        if (url == '' || !data) {
+        if (url == "" || !data) {
             console.error("Either URL is blank or data not passed");
             return null;
         }
@@ -47,16 +44,15 @@ export const cPost = async (url: string, data: any) => {
         console.error(error);
         return null;
     }
-}
+};
 
 /**
  * Custom PUT request wrapper from urls (Axios based)..
  * args: url (with keypair, eg: ?id=1), data (put object)
  */
 export const cPut = async (url: string, data: any) => {
-    
     try {
-        if (url == '' || !data) {
+        if (url == "" || !data) {
             console.error("Either URL is blank or data not passed");
             return null;
         }
@@ -67,16 +63,15 @@ export const cPut = async (url: string, data: any) => {
         console.error(error);
         return null;
     }
-}
+};
 
 /**
  * Custom DELETE request wrapper from urls (Axios based)..
  * args: url (with keypair, eg: ?id=1)
  */
 export const cDelete = async (url: string) => {
-    
     try {
-        if (url == '') {
+        if (url == "") {
             console.error("URL is blank!!");
             return null;
         }
@@ -88,4 +83,4 @@ export const cDelete = async (url: string) => {
         console.error(error);
         return null;
     }
-}
+};

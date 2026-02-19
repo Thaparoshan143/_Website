@@ -30,7 +30,7 @@ const Contact = () => {
         const emailValidator = (e: string) => {
             const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
             return regex.test(e);
-        }
+        };
         // validating the form first..
         if (!emailValidator(email)) {
             alert("Invalid email address! Check email again");
@@ -40,7 +40,7 @@ const Contact = () => {
         cPost("/contact", {
             name,
             email,
-            message
+            message,
         }).then((d) => {
             if (d) {
                 alert("Information recorded successful");
@@ -53,7 +53,6 @@ const Contact = () => {
         });
         // console.log("Name : " + name + " | Email : " + email + " | message : " + message);
         // If clearning not required then remove or comment line below
-
     };
 
     const [name, setName] = useState("");
