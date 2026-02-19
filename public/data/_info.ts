@@ -4,10 +4,6 @@ export const _description =
 export const _aboutMe = "";
 export const _socialHandles = [
     {
-        media: "Facebook",
-        url: "https://www.facebook.com/Me-in-Unity-102966158048488/",
-    },
-    {
         media: "Github",
         url: "https://github.com/Thaparoshan143",
     },
